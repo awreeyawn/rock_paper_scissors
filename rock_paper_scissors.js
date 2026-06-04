@@ -21,6 +21,18 @@ function getHumanChoice() {
 var humanScore = 0;
 var computerScore = 0;
 
+function playRound(humanChoice, computerChoice) {
+    humanChoice = humanChoice.toLowerCase();
+
+    if (humanChoice === computerChoice) {
+        return "It's a tie!";
+    }
+
+
+}
+    
+    
+
 
 
    
