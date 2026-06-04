@@ -17,4 +17,10 @@ function getHumanChoice() {
     const userInput = prompt("Please enter rock, paper, or scissors:");
     return userInput.toLowerCase();
 }
+
+var humanScore = 0;
+var computerScore = 0;
+
+
+
    
