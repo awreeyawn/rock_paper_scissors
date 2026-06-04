@@ -37,9 +37,9 @@ function playRound(humanChoice, computerChoice) {
         computerScore++;
         return "You lose! " + computerChoice + " beats " + humanChoice;
     }
-
-
 }
+
+
     
     
 
