@@ -18,9 +18,6 @@ function getHumanChoice() {
     return userInput.toLowerCase();
 }
 
-var humanScore = 0;
-var computerScore = 0;
-
 function playRound(humanChoice, computerChoice) {
     humanChoice = humanChoice.toLowerCase();
 
@@ -39,6 +36,24 @@ function playRound(humanChoice, computerChoice) {
     }
 }
 
+function playGame() {
+    humanScore = 0;
+    computerScore = 0; 
+
+    for (let i = 1; i <= 5; i++) {
+        console.log("Round " + i);
+        let computerChoice = getComputerChoice();
+        let humanChoice = getHumanChoice();
+        let result = playRound(humanChoice, computerChoice);
+        console.log(result);
+        console.log("Current Score - You: " + humanScore + " Computer: " + computerScore);
+    }
+    console.log("Final Score - You: " + humanScore + " Computer: " + computerScore);
+}
+
+console.log(playGame());
+        
+        
 
     
     
